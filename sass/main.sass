@@ -1,0 +1,136 @@
+// Variables
+$main-green: #336566
+$hover-text-color: #DDF75B
+
+
+// Navbar styles
+.navbar-nav
+  .nav-link
+    &.h4
+      font-family: 'Junigarden Serif PERSONAL USE'
+
+@font-face
+  font-family: 'Junigarden Serif PERSONAL USE'
+  src: url('../fonts/JuningardenSerifPERSONALUSE.ttf') format('truetype')
+
+// Be Vietnam Pro font styles
+$be-vietnam-pro: "Be Vietnam Pro", sans-serif
+
+.be-vietnam-pro-regular
+  font-family: $be-vietnam-pro
+  font-weight: 400
+  font-style: normal
+
+.be-vietnam-pro-medium
+  font-family: $be-vietnam-pro
+  font-weight: 500
+  font-style: normal
+
+.be-vietnam-pro-semibold
+  font-family: $be-vietnam-pro
+  font-weight: 600
+  font-style: normal
+
+.be-vietnam-pro-bold
+  font-family: $be-vietnam-pro
+  font-weight: 700
+  font-style: normal
+
+// Font utilities
+.font-vietnam
+  font-family: $be-vietnam-pro
+
+.font-Junigarden
+  font-family: 'Junigarden Serif PERSONAL USE', serif
+
+// Text colors
+.text-main-green
+  color: $main-green
+
+// Button styles
+.btn-primary 
+  background-color: $main-green
+  border-color: $main-green
+  
+
+
+  &:hover
+    background-color: $main-green
+    border-color: $main-green
+    color: $hover-text-color
+
+// Navbar brand padding
+.navbar-brand
+  padding-left: 20px
+
+// Background styles
+.bg-main-green
+  background-color: $main-green
+  color: white // Optional: Set text color for contrast
+
+$background-color: #fdf4e7
+$text-color: #2d4c43
+$card-shadow: rgba(0, 0, 0, 0.1)
+
+
+body 
+  font-family: "Be Vietnam Pro", sans-serif
+  background-color: $background-color
+  color: $text-color
+
+
+$background-color: #fdf4e7
+$text-color: #2d4c43
+$grey-color: #8c8c8c
+$card-shadow: rgba(0, 0, 0, 0.1)
+
+// Global Reset
+
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+
+body 
+  font-family: "Be Vietnam Pro", sans-serif
+  background-color: $background-color
+  color: $text-color
+
+
+// Section Styling
+.group-card-section 
+  background-color: $background-color
+
+
+// Group Card
+.group-card 
+  max-width: 600px
+  background: #ffffff
+  border-radius: 12px
+  box-shadow: 0 8px 15px $card-shadow
+
+  .group-card-image 
+    width: 40%
+    object-fit: cover
+    border-top-right-radius: 12px 
+    border-bottom-right-radius: 12px
+  
+
+  .group-card-details 
+    flex-grow: 1
+
+    .group-title 
+      font-weight: 600
+      font-size: 1.25rem
+      color: $text-color
+    
+
+    .group-time,
+    .group-day,
+    .group-location 
+      color: $grey-color
+      font-size: 0.95rem
+    
+
+
+@import "../node_modules/bootstrap/scss/bootstrap"
