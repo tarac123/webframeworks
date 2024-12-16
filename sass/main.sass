@@ -8,6 +8,7 @@ $hover-text-color: #DDF75B
   .nav-link
     &.h4
       font-family: 'Junigarden Serif PERSONAL USE'
+      color: $main-green
 
 @font-face
   font-family: 'Junigarden Serif PERSONAL USE'
@@ -48,11 +49,9 @@ $be-vietnam-pro: "Be Vietnam Pro", sans-serif
   color: $main-green
 
 // Button styles
-.btn-primary 
+.btn.btn-primary 
   background-color: $main-green
   border-color: $main-green
-  
-
 
   &:hover
     background-color: $main-green
@@ -62,6 +61,17 @@ $be-vietnam-pro: "Be Vietnam Pro", sans-serif
 // Navbar brand padding
 .navbar-brand
   padding-left: 20px
+
+// Banner Styles
+.banner
+  font-size: 4rem
+  max-width: 700px
+  text-align: center 
+  font-family: 'Junigarden Serif PERSONAL USE' // Ensure the font is correctly imported
+  color: $main-green // Define $main-green in your variables
+
+.highlight
+  font-style: italic
 
 // Background styles
 .bg-main-green
@@ -98,39 +108,89 @@ body
 
 
 // Section Styling
-.group-card-section 
+.groups
   background-color: $background-color
 
 
-// Group Card
-.group-card 
-  max-width: 600px
-  background: #ffffff
-  border-radius: 12px
-  box-shadow: 0 8px 15px $card-shadow
+// Colors
+$card-background: #ffffff
+$button-background: #316b6b
+$button-shadow: #2a5959
+$button-text-color: #f5f5f5
+$button-icon-color: #d9f05b
+$text-color: #2d4c43
+$secondary-text-color: #8c8c8c
 
-  .group-card-image 
-    width: 40%
-    object-fit: cover
-    border-top-right-radius: 12px 
-    border-bottom-right-radius: 12px
-  
+// Group Card Container
+.groupcard
+  display: flex
+  justify-content: center
+  padding: 20px
+  gap: 20px
 
-  .group-card-details 
-    flex-grow: 1
+  .group-card
+    display: flex
+    background-color: $card-background
+    border-radius: 12px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    overflow: hidden
+    max-width: 500px
+    width: 100%
 
-    .group-title 
-      font-weight: 600
-      font-size: 1.25rem
-      color: $text-color
-    
+    .group-card-image
+      width: 40%
+      object-fit: cover
+      height: auto
 
-    .group-time,
-    .group-day,
-    .group-location 
-      color: $grey-color
-      font-size: 0.95rem
-    
+    .group-card-details
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      flex-grow: 1
+      padding: 1rem
+      
+
+      .group-title
+        font-size: 1.25rem
+        font-weight: 600
+        color: $text-color
+
+      .group-time, .group-day, .group-location
+        font-size: 0.95rem
+        color: $secondary-text-color
+        margin: 0
+        font-weight: 600
+
+      .button-container
+        display: flex
+        justify-content: flex-start
+
+        .join-group-button
+          display: flex
+          align-items: center
+          justify-content: space-between
+          background-color: $button-background
+          color: $button-text-color
+          font-size: 1rem
+          font-weight: bold
+          border: none
+          border-radius: 8px
+          padding: 8px 16px
+          box-shadow: 0px 4px 0px $button-shadow
+          cursor: pointer
+          transition: all 0.2s ease
+
+          &:hover
+            transform: translateY(2px)
+            box-shadow: 0px 2px 0px $button-shadow
+
+          .button-text
+            margin-right: 8px
+
+          .button-icon
+            color: $button-icon-color
+            font-size: 1.5rem
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap"
