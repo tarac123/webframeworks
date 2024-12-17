@@ -126,7 +126,7 @@ $secondary-text-color: #8c8c8c
   display: flex
   justify-content: center
   padding: 20px
-  gap: 20px
+  gap: 32px
 
   .group-card
     display: flex
@@ -136,6 +136,8 @@ $secondary-text-color: #8c8c8c
     overflow: hidden
     max-width: 500px
     width: 100%
+    margin-bottom: 16px
+    margin-top: 32px
 
     .group-card-image
       width: 40%
@@ -191,6 +193,56 @@ $secondary-text-color: #8c8c8c
             color: $button-icon-color
             font-size: 1.5rem
 
+img.groups
+  display: block
+  margin-left: auto
+  height:  200px
 
+
+// Notification box container
+.notification-box
+  display: flex
+  align-items: center
+  background-color: #fff
+  border-radius: 20px
+  padding: 30px
+  width: 300px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+  margin-top: 32px
+  margin-bottom: 32px
+
+.notification
+  color: $card-background
+
+
+.section-3
+  background-color: $main-green
+  
+
+.icon
+  background-color: #121814 // Dark icon background
+  color: white
+  font-size: 1.5rem
+  font-weight: bold
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  margin-right: 1rem
+
+.message
+  color: #000
+  font-size: 1.1rem
+  line-height: 1.4
+  font-weight: 500
+
+
+.notification-section
+  display: flex
+  justify-content: center
+  padding: 20px
+  gap: 32px
 
 @import "../node_modules/bootstrap/scss/bootstrap"

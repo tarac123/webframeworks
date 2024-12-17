@@ -95,7 +95,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
-  gap: 20px;
+  gap: 32px;
 }
 .groupcard .group-card {
   display: flex;
@@ -105,6 +105,8 @@ body {
   overflow: hidden;
   max-width: 500px;
   width: 100%;
+  margin-bottom: 16px;
+  margin-top: 32px;
 }
 .groupcard .group-card .group-card-image {
   width: 40%;
@@ -159,6 +161,60 @@ body {
 .groupcard .group-card .group-card-details .button-container .join-group-button .button-icon {
   color: #d9f05b;
   font-size: 1.5rem;
+}
+
+img.groups {
+  display: block;
+  margin-left: auto;
+  height: 200px;
+}
+
+.notification-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.notification {
+  color: #ffffff;
+}
+
+.section-3 {
+  background-color: #336566;
+}
+
+.icon {
+  background-color: #121814;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.message {
+  color: #000;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.notification-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 32px;
 }
 
 /*!
